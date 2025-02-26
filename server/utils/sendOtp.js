@@ -10,6 +10,8 @@ const transporter = nodemailer.createTransport({
       
     },
   });
+
+  //send otp
 const sendEmail = (to, subject, text) => {
     const mailOptions = {
         from: 'ranusharma14112003@gmail.com',
