@@ -88,7 +88,7 @@ async function handleDeleteUser(req, res) {
   }
 }
 
-// api for User Registratiomn
+// api for User Registration
 async function handlePostUser(req, res) {
   try {
     const { email, name, phone, password, role } = req.body;
