@@ -62,6 +62,7 @@ async function viewUserProfile(req,  res) {
   })
 }
 
+//ecommerce
 async function handleEditUserById(req, res) {
   try {
     const userId = req.params.id;
