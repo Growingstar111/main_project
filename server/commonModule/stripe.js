@@ -1,8 +1,9 @@
 const { Payment } = require("../models/payment");
 const { users } = require("../models/userSchema");
+require("dotenv").config();
 
 const stripe = require("stripe")(
-  "sk_test_51QcM58JMY8QRheFJ0yAYpaIRhRnkrn9p8br5ppWsOmN0YscHZZQuhuTNNOu7mwA7R05NtzcVK7slO2GMOnImqopB00wud4jA9q"
+   process.env.Stripe_Secret_key
 );
 
 //api for creating customer
